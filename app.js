@@ -11,11 +11,12 @@ window.addEventListener('load', ()=> {
       //api
       const api = `http://api.weatherstack.com/current?access_key=${appid}&query=${lat},${long}`;
       
-      console.log(api);
+//       console.log(api);
+//       fetching api 
       fetch(api)
         .then(response => {return response.json()})
         .then(data => {
-          console.log(data);
+//           console.log(data);
 
 
           let temp = data.current.temperature;
